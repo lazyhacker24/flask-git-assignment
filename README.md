@@ -34,3 +34,22 @@ This repository contains a Flask project for the Git assignment.
 
 ```bash
 pip install -r requirements.txt
+
+
+
+
+### 🏷️ How to Run
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+
+2. Run the Flask app:
+
+python app.py
+Access in browser:
+
+3. Access in browse
+
+http://127.0.0.1:5000/
