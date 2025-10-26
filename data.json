@@ -1,5 +1,7 @@
 {
   "name": "Flask Git Assignment",
-  "version": "1.0",
-  "description": "Sample API data for /api route"
+  "version": "2.0",
+  "description": "Updated API data from Tutedude_new branch",
+  "author": "Tutedude",
+  "timestamp": "2025-10-26"
 }
