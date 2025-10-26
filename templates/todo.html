@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do Page</title>
+</head>
+<body>
+  <h2>Add To-Do Item</h2>
+  <form id="todoForm">
+    <label>Item Name:</label><br>
+    <input type="text" id="itemName" name="itemName"><br><br>
+
+    <label>Item Description:</label><br>
+    <textarea id="itemDescription" name="itemDescription"></textarea><br><br>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+
+  <script>
+    async function submitForm() {
+      const data = {
+        itemName: document.getElementById('itemName').value,
+        itemDescription: document.getElementById('itemDescription').value
+      };
+
+      const res = await fetch('/submittodoitem', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+      alert(result.message);
+    }
+  </script>
+</body>
+</html>
